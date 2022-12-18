@@ -1,0 +1,171 @@
+.viewProduct{
+    width: 100%;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+ 
+}
+.viewProduct_main{
+    display: flex;
+    width: 100%;
+}
+.viewProduct-left{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    position: sticky;
+    justify-content: space-around;
+    height:500px;
+}
+.sliderText{
+    font-size: 16px;
+}
+.menuList{
+    font-size: 30px;
+    font-weight: 500;
+    color:var(--color-white);
+    margin-bottom: 20px;
+}
+.viewProduct-center{
+    display: flex;
+    flex-direction: column;
+    flex:3;
+    align-items: flex-start;
+    overflow-y: scroll;
+    height: 600px;
+}
+::-webkit-scrollbar{
+    width:5px;
+    height: 20px;
+}
+::-webkit-scrollbar-track{
+    background-color:gold;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+.change{
+    color:gold;
+}
+.notchange{
+    color:white;
+}
+
+.centerTitle{
+    font-family: var(--font-base);
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 500;
+    color:var(--color-white);
+}
+.valueTitle{
+    margin-left: 20px;
+    font-style: italic;
+    text-transform: capitalize;
+    font-weight: 500;
+    color:var(--color-white);
+
+}
+.viewProduct-right{
+    display: flex;
+    flex:1.5;
+    flex-direction: column;
+    align-items: center;
+
+}
+.centerContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.centerContainerTop{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.centerContainerpro{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+.containerLeft{
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    color:white;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+.viewProduct-center-component{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.containerRight{
+    display: flex;
+    flex: 1;
+    margin-left: 20px;
+    position: relative;
+    align-items: flex-end;
+}
+.foodImg{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;  
+}
+.saveFood{
+    position: absolute;
+    bottom:-5%;
+    right:30%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color-crimson);
+    color: var(--color-black);
+    font-family: var(--font-base);
+    font-size: 16px;
+}
+.foodTitle{
+    font-size: 20px;
+    font-weight: 500;
+    color:white;
+    margin-bottom: 10px;
+}
+
+.foodPrice{
+    font-size: 20px;
+    font-weight: 500;
+    color:white;
+    margin-bottom: 10px;
+}
+.bookmarkicon{
+    color:yellowgreen;
+    margin-right: 5px;
+}
+.cartItemTitle{
+    color:white;
+    font-size: 25px !important;
+    font-weight: 500;
+    font-family: var(--font-base);
+}
+.split{
+    width: 4px;
+    height: 90%;
+    color:#fff;
+}
+.navbarFilter{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0,0,0,0.7);
+    color: var(--color-white);
+    font-family: var(--font-base);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

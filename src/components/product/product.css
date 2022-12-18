@@ -1,0 +1,117 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px 10px;
+    border: 1px solid black;
+
+}
+.product:hover{
+    border: 1px solid gray;
+    transition: 0.8s;
+}
+.productTop{
+    flex:1;
+    display: flex;
+    align-items: center;
+}
+.productTop img{
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.productBottom{
+    flex:1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.title{
+    color:var(--color-golden);
+    font-family: var(--font-base);
+    font-size: 20px;
+    font-weight: 500;
+}
+.desc{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.productDesc{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+.star{
+    display: flex;
+    align-items: center;
+    background-color: teal;
+    color:white;
+    padding-inline: 10px;
+    border-radius: 5px;
+}
+.dash{
+    background-color: azure;
+    height: 10px;
+    width: 1px;
+}
+.select{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: teal;
+    color:white;
+}
+.option{
+    padding: 5px !important;
+    font-size: 14px;
+    align-items: center;
+    background-color: white;
+    color:teal;
+    height: 15px !important;
+}
+.notchange{
+    color:white;
+
+}
+
+.change{
+    color: orange;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:1150px){
+    .product{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .desc{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:650px){
+    .productTop img{
+        width: 250px;
+        height: 200px;
+        margin-right: 20px;
+    }
+    .product{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

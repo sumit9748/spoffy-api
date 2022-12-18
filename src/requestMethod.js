@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://spoffy-api.onrender.com/connect";
+const BASE_URL = "https://spoffy-api.onrender.com/connect/";
 
 const user = JSON.parse(localStorage.getItem("persist:root"))?.user;
 const currentUser = user && JSON.parse(user).currentUser;

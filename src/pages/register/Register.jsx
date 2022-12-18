@@ -70,7 +70,6 @@ export const Register = () => {
     e.preventDefault();
 
     try {
-      console.log(values);
       await publicRequest.post("/auth/register", values);
       history.push("/login");
     } catch (err) {

@@ -11,6 +11,8 @@ const Container = styled.div`
   position: sticky;
   top: 0;
   margin-bottom: 10px;
+  background-color: black;
+  z-index: 999;
   ${mobile({ height: "50px" })}
 `;
 const Wrapper = styled.div`
@@ -18,7 +20,6 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 999;
 
   ${mobile({ padding: "10px 0" })}
 `;

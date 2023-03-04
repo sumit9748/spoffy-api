@@ -45,6 +45,8 @@ const Slide = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: #${(props) => props.bg};
+  border: 1px solid ${(p) => p.border};
+  border-radius: 10px;
 `;
 const ImgContainer = styled.div`
   flex: 1;

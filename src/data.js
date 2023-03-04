@@ -4,24 +4,26 @@ export const sliderItems = [
     img: "https://www.freepnglogos.com/uploads/food-png/food-grass-fed-beef-foodservice-products-grass-run-farms-4.png",
     title: "Spoffy makes yummy",
     desc: "..𝖂𝖊 𝖘𝖊𝖗𝖛𝖊 𝖙𝖍𝖊 𝖋𝖔𝖔𝖉 𝖎𝖓 𝖓𝖊𝖊𝖉 𝖙𝖔 𝖌𝖆𝖎𝖓 𝖘𝖔𝖒𝖊 𝖉𝖊𝖊𝖉..",
-    bg: "f5fafd",
+    bg: "white",
+    border: "#756213",
   },
   {
     id: 2,
     img: "https://www.freepnglogos.com/uploads/food-png/food-sutherland-foodservice-12.png",
     title: "𝕬𝖗𝖙 𝖔𝖋 𝕯𝖊𝖑𝖎𝖌𝖍𝖙",
     desc: "𝕾𝖊𝖗𝖛𝖊 𝕽𝕰𝕬𝕷 𝖋𝖔𝖔𝖉 𝖙𝖍𝖆𝖙 𝖙𝖆𝖘𝖙𝖊𝖘, 𝖑𝖔𝖔𝖐𝖘, 𝖆𝖓𝖉 𝖘𝖒𝖊𝖑𝖑𝖘 𝖉𝖊𝖑𝖎𝖈𝖎𝖔𝖚𝖘.",
-    bg: "fcf1ed",
+    bg: "white",
+    border: "#756213",
   },
   {
     id: 3,
     img: "https://www.freepnglogos.com/uploads/food-png/food-plate-png-transparent-image-pngpix-2.png",
     title: "𝓡𝓮𝓪𝓬𝓱 𝓣𝓪𝓼𝓽𝓮",
     desc: "𝕼𝖚𝖆𝖑𝖎𝖙𝖞. 𝕻𝖆𝖘𝖘𝖎𝖔𝖓. 𝕻𝖗𝖎𝖉𝖊 𝕸𝖆𝖐𝖊𝖘 𝖚𝖘 𝕽𝖎𝖌𝖍𝖙",
-    bg: "fbf0f4",
+    bg: "white",
+    border: "#756213",
   },
 ];
-
 
 export const categories = [
   {
@@ -42,49 +44,41 @@ export const categories = [
     title: "𝖎𝖈𝖊𝖈𝖗𝖊𝖆𝖒 𝖆𝖓𝖉 𝖈𝖆𝖐𝖊𝖘",
     cat: "recommended",
   },
-
 ];
 export const popularProducts = [
   {
     id: 1,
     img: "https://www.freepnglogos.com/uploads/food-png/true-food-kitchen-35.png",
-
   },
   {
     id: 2,
     img: "https://www.freepnglogos.com/uploads/food-png/fast-food-transparent-png-pictures-icons-and-png-18.png",
-
   },
   {
     id: 3,
     img: "https://www.freepnglogos.com/uploads/food-png/download-food-png-file-png-image-pngimg-1.png",
-
   },
   {
     id: 4,
     img: "https://mantrapines.com/wp-content/uploads/2020/10/Website-Image-min-1.png",
-
   },
   {
     id: 5,
     img: "https://www.freepnglogos.com/uploads/food-png/food-plate-png-transparent-image-pngpix-14.png",
-
   },
   {
     id: 6,
     img: "https://www.pngmart.com/files/5/Indian-Food-PNG-File.png",
-
   },
   {
     id: 7,
     img: "https://www.freepnglogos.com/uploads/food-png/food-sutherland-foodservice-12.png",
-
   },
   {
     id: 8,
     img: "https://www.freepnglogos.com/uploads/food-png/food-koconut-grove-24.png",
   },
-]
+];
 export const AllpopularProducts = [
   {
     id: 1,
@@ -182,4 +176,4 @@ export const AllpopularProducts = [
     ordername: "Manchuriyan noodles",
     price: "157",
   },
-]
+];

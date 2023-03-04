@@ -35,18 +35,6 @@ const Language = styled.span`
   ${mobile({ display: "none" })}
 `;
 
-const SearchContainer = styled.div`
-  border: 1px solid lightgray;
-  display: flex;
-  align-items: center;
-  margin-left: 25px;
-  padding: 5px;
-`;
-
-const Input = styled.input`
-  border: none;
-  ${mobile({ width: "50px" })};
-`;
 const ProfileImg = styled.img`
   width: 32px;
   height: 32px;
@@ -118,7 +106,7 @@ const Navbar = () => {
       <Wrapper>
         <Link to="/">
           <Left>
-            <Img src="https://www.clipartmax.com/png/middle/474-4745177_cook-logo.png" />
+            {/* <Img src="https://www.clipartmax.com/png/middle/474-4745177_cook-logo.png" /> */}
           </Left>
         </Link>
         <Center>

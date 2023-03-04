@@ -9,6 +9,8 @@ import { Link } from "react-router-dom";
 const Container = styled.div`
   height: 60px;
   position: sticky;
+  top: 0;
+  margin-bottom: 10px;
   ${mobile({ height: "50px" })}
 `;
 const Wrapper = styled.div`

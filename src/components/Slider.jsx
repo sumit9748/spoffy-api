@@ -1,17 +1,19 @@
-import React from 'react'
-import styled from 'styled-components'
-import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
-import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import React from "react";
+import styled from "styled-components";
+import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
+import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import { useState } from "react";
 import { sliderItems } from "../data";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
-width:100%;
-height:100vh;
-display:flex;
-position:relative;
-overflow:hidden;`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+`;
 
 const Arrow = styled.div`
 width:50px;
@@ -23,92 +25,94 @@ justify-content:center;
 position:absolute;
 top:0;
 bottom:0;
-left:${props => props.direction === "left" && "10px"};
-right:${props => props.direction === "right" && "10px"};
+left:${(props) => props.direction === "left" && "10px"};
+right:${(props) => props.direction === "right" && "10px"};
 margin:auto;
 cursor:pointer;
 opacity:0.7;
-z-index:2;`
+z-index:2;`;
 
 const Wrapper = styled.div`
-height:100%;
-display:flex;
-transition:all 1.5s ease;
-transform:translateX(${props => props.slideIndex * -100}vw);
-`
+  height: 100%;
+  display: flex;
+  transition: all 1.5s ease;
+  transform: translateX(${(props) => props.slideIndex * -100}vw);
+`;
 
 const Slide = styled.div`
-display:flex;
-align-items:center;
-width:100vw;
-height:100vh;
-background-color:#${props => props.bg};
-
-`
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #${(props) => props.bg};
+`;
 const ImgContainer = styled.div`
-flex:1;
-height:100%;
-margin-left:20px;`
+  flex: 1;
+  height: 100%;
+  margin-left: 20px;
+`;
 
 const Image = styled.img`
-height:80%;`
+  height: 80%;
+`;
 const InfoContainer = styled.div`
-flex:1;
-padding:50px;`
+  flex: 1;
+  padding: 50px;
+`;
 
 const Title = styled.h1`
-font-size:70px;`
+  font-size: 70px;
+`;
 const Desc = styled.p`
-margin:50px;
-font-size:20px;
-font-weight:500;
-letter-spacing:2px;`
+  margin: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+`;
 const Button = styled.button`
-padding:10px;
-font-size:20px;
-background-color:transparent;
-border-radius:10px;
-cursor:pointer;
-color:black;
-&:hover{
-    background-color:orange;
-}`
-
-
-
+  padding: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+  &:hover {
+    background-color: orange;
+  }
+`;
 
 export const Slider = ({ scrolltoNext }) => {
-    const [slideIndex, setSlideIndex] = useState(0);
-    const handleClick = (direction) => {
-        if (direction === "left") {
-            setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2)
-        } else {
-            setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0)
-        }
+  const [slideIndex, setSlideIndex] = useState(0);
+  const handleClick = (direction) => {
+    if (direction === "left") {
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+    } else {
+      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
     }
-    return (
-        <Container>
-            <Arrow direction="left" onClick={() => handleClick("left")}>
-                <ArrowCircleLeftIcon style={{ color: 'yellow' }} />
-            </Arrow>
-            <Wrapper slideIndex={slideIndex}>
-                {sliderItems.map((item) => (
-                    <Slide bg={item.bg}>
-                        <ImgContainer>
-                            <Image src={item.img} />
-                        </ImgContainer>
-                        <InfoContainer>
-                            <Title>{item.title}</Title>
-                            <Desc>{item.desc}</Desc>
-                            <Button onClick={() => scrolltoNext()}>𝕤𝕙𝕠𝕡 𝕟𝕠𝕨</Button>
-                        </InfoContainer>
-                    </Slide>
-                ))}
-            </Wrapper>
+  };
+  return (
+    <Container>
+      <Arrow direction="left" onClick={() => handleClick("left")}>
+        <ArrowCircleLeftIcon style={{ color: "yellow" }} />
+      </Arrow>
+      <Wrapper slideIndex={slideIndex}>
+        {sliderItems.map((item) => (
+          <Slide bg={item.bg}>
+            <ImgContainer>
+              <Image src={item.img} />
+            </ImgContainer>
+            <InfoContainer>
+              <Title>{item.title}</Title>
+              <Desc>{item.desc}</Desc>
+              <Button onClick={() => scrolltoNext()}>𝕤𝕙𝕠𝕡 𝕟𝕠𝕨</Button>
+            </InfoContainer>
+          </Slide>
+        ))}
+      </Wrapper>
 
-            <Arrow direction="right" onClick={() => handleClick("right")}>
-                <ArrowCircleRightIcon style={{ color: 'black' }} />
-            </Arrow>
-        </Container>
-    )
-}
+      <Arrow direction="right" onClick={() => handleClick("right")}>
+        <ArrowCircleRightIcon style={{ color: "black" }} />
+      </Arrow>
+    </Container>
+  );
+};

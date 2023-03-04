@@ -100,7 +100,6 @@ export const Register = () => {
             data in accordance with the<b>PRIVACY POLICY</b>
           </span>
           <button type="submit" className="button">
-            {" "}
             Create
           </button>
           <Link to="/login">
